@@ -1,0 +1,432 @@
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;}
+        body { 
+            --first-color: #374151; 
+            --second-color: #1e40af;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background-color: #FAFAFA;}
+
+            
+            
+    body::-webkit-scrollbar{
+    background-color: rgb(255, 255, 255);
+     width: 11px;
+    
+    }
+
+    body::-webkit-scrollbar-thumb{
+     
+ 
+      border-radius: 10px;
+      background-color: var(--second-color);
+      
+      
+    
+    }
+
+    
+    body::-webkit-scrollbar-thumb:hover{
+      
+      box-shadow: inset 0 0 .5rem rgb(169, 168, 168);
+    }
+
+
+        header { position: fixed; top: 0; width: 100%;background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+        .header-container {
+            background-color: #FAFAFA;
+       
+            width: 100%; margin: 0px 50px 0 0; display: flex; justify-content: space-between; align-items: center; padding: 50px 30px;}
+        .logo { 
+            width: 226px;
+            height: 48px;
+            
+            background-image: url("assets/biocle-logo.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .nav { display: flex; gap: 2rem; list-style: none; }
+        .nav a {font-size: 20px; text-decoration: none; color: var(--first-color); font-weight: 500; transition: color 0.2s; }
+        .nav a:hover { color: #1e40af; }
+        
+        .hamburger { display: none; flex-direction: column; width: 25px; height: 20px; cursor: pointer; }
+        .hamburger span { height: 3px; background: #1e40af; margin: 3px 0; transition: 0.3s; border-radius: 2px; }
+       .equipo a{
+            text-decoration: none;
+            padding: 50px 0 ;
+            box-shadow: 0 3px 1rem .5rem rgb(221, 220, 220);
+            border-radius: 20px;
+             transition: .3s;
+        }
+
+        .equipo a:hover{
+           transform: scale(.99) translateY(-2px);
+           box-shadow: 0 3px 1rem .1rem rgb(221, 220, 220);
+           
+           transition: .3s ease-in;
+        }
+
+
+        .team{
+            margin-top: 50px;
+            border-top: 6px solid rgb(237, 237, 237);
+            box-shadow: 0 -10px 1.5rem .01rem rgb(207, 207, 207);
+        }
+
+        h3{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+          
+        .data-container{
+            background-color: var(--first-color);
+            color: white;
+            padding: 10px 0;
+
+            box-shadow: inset 0 0 .8rem rgb(161, 159, 159);
+        }
+
+
+        @keyframes Animation-bubble2{
+              0%{
+                transform: translateX(-600%) translateY(0%);
+            }
+            100%{
+                transform: translateX(600%) translateY(150%);
+            }
+        }
+
+          @keyframes Animation-bubble1{
+              0%{
+                transform: translateX(-1000%) translateY(0%);
+            }
+            100%{
+                transform: translateX(1500%) translateY(-280%);
+            }
+        }
+
+        .bubble1, .bubble2{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 370px;
+            left: 300px;
+            background-color: transparent;
+            animation: Animation-bubble1 13s linear infinite;
+            box-shadow: inset 0 0 1.8rem rgba(193, 189, 187, 0.5);
+        }
+
+        .bubble2{
+            width: 400px;
+            height: 400px;
+              bottom: 400px;
+            left: 500px;
+            box-shadow: inset 0 0 1.5rem rgb(226, 177, 142, .5);
+            animation: Animation-bubble2 9s ease-in infinite;
+        }
+
+        @media (max-width: 1800px){
+                    
+        main { padding-top: 80px; }
+        .hero { min-height: 100vh; width: 100%; position: fixed; 
+            top: 20vh; z-index: -1; overflow: hidden;
+         
+        }
+        .hero-content {
+           
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            
+            
+            background-image: url("assets/hero-title.png"); 
+           background-repeat: no-repeat;
+           background-size: 50%;
+           background-position: center 30%;
+           position: relative;
+           
+
+
+           .vesicle-hero{
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            background-image: url("assets/vesicle-hero.png");
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: center 10%;
+            
+            top: 42.5%;
+          
+           }
+        }
+   
+
+        
+
+        .content-container{
+            background-color: #FAFAFA;
+         
+            
+        }
+        .section { padding: 5rem 5%; max-width: 1200px; margin: 0 auto; }
+        .section h2 {text-shadow: 2px 2px .4rem rgb(163, 163, 163); font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: #1e40af; }
+        .section-content { display: grid; gap: 2rem; text-align: center;}
+        
+        .contexto{
+           margin-top: 100vh;
+            
+        }
+        .nuestra-solucion { background: white; }
+        
+        .card {max-width: 800px; margin: 0 auto; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .equipo { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .equipo-card { text-align: center; color: var(--first-color);}
+        .equipo-card img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 2px solid rgb(231, 230, 230);}
+      
+
+        footer { background: #1f2937; color: white; text-align: center; padding: 2rem 5%; }
+        .linkedin { color: #60a5fa; text-decoration: none; font-weight: 500; }
+        
+
+        }
+        
+            
+ @media (max-width: 1200px) {
+                    
+    main { padding-top: 80px; }
+
+        .logo { 
+            width: 180px;
+            height: 48px;
+            
+            background-image: url("assets/biocle-logo.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .hero { min-height: 100vh; width: 100%; position: fixed;
+            top: 20vh; z-index: -1;
+         
+        }
+        .hero-content {
+           
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            
+            
+            background-image: url("assets/hero-title.png"); 
+           background-repeat: no-repeat;
+           background-size: 60%;
+           background-position: center 30%;
+           position: relative;
+           
+
+
+           .vesicle-hero{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("assets/vesicle-hero.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center 10%;
+            
+            top: 37%;
+           }
+        }
+   
+
+                  
+  @media (max-width: 1000px) {
+                    
+
+      .nav a {font-size: 16px; text-decoration: none; color: var(--first-color); font-weight: 500; transition: color 0.2s; }
+       
+
+        main { padding-top: 80px; }
+        .hero { min-height: 100vh; width: 100%; position: fixed;
+            top: 20vh; z-index: -1;
+         
+        }
+        .hero-content {
+           
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            
+            
+            background-image: url("assets/hero-title.png"); 
+           background-repeat: no-repeat;
+           background-size: 85%;
+           background-position: center 30%;
+           position: relative;
+           
+
+
+           .vesicle-hero{
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            background-image: url("assets/vesicle-hero.png");
+            background-repeat: no-repeat;
+            background-size: 130%;
+            background-position: center 10%;
+            
+            top: 44.5%;
+           }
+        }
+
+      
+        .section { padding: 5rem 5%; max-width: 1200px; margin: 0 auto; }
+        .section h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: #1e40af; }
+        .section-content { display: grid; gap: 2rem; }
+        
+        .contexto{
+           margin-top: 100vh;
+            
+        }
+        .nuestra-solucion { background: white; }
+        
+        .card {max-width: 800px; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .equipo { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .equipo-card { text-align: center; }
+        
+        footer { background: #1f2937; color: white; text-align: center; padding: 2rem 5%; }
+        .linkedin { color: #60a5fa; text-decoration: none; font-weight: 500; }
+        
+
+        }
+    }
+
+
+
+    
+        @media (max-width: 768px) {
+        .logo { 
+            width: 120px;
+            height: 25px;
+            background-image: url("assets/biocle-logo.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+        }
+            .hero-content {
+           
+            width: 100%;
+            height: 90vh;
+            margin: 0 auto;
+            
+            
+            background-image: url("assets/hero-title.png"); 
+           background-repeat: no-repeat;
+           background-size: 85%;
+           background-position: center 30%;
+           position: relative;
+           
+
+
+           .vesicle-hero{
+            position: absolute;
+            width: 100%;
+            height: 30%;
+            background-image: url("assets/vesicle-hero.png");
+            background-repeat: no-repeat;
+            background-size: 130%;
+            background-position: center -5%;
+            
+            top: 42.5%;
+           }
+        }
+
+         .hamburger { display: flex; }
+            .nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; flex-direction: column; padding: 1rem; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+            .nav.active { display: flex; }
+            .hero h1 { font-size: 2rem; }
+            .section { padding: 3rem 5%; }
+    }
+
+        @media (max-width: 400px) {
+        .logo { 
+            width: 120px;
+            height: 25px;
+            background-image: url("assets/biocle-logo.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+        }
+
+
+        .header-container{
+            padding: 30px 20px;
+        }
+       
+        
+        h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+            .hero-content {
+           
+            width: 100%;
+            height: 90vh;
+            margin: 0 auto;
+            
+            
+            background-image: url("assets/hero-title.png"); 
+           background-repeat: no-repeat;
+           background-size: 85%;
+           background-position: center 30%;
+           position: relative;
+           
+
+
+           .vesicle-hero{
+            position: absolute;
+            width: 100%;
+            height: 30%;
+            background-image: url("assets/vesicle-hero.png");
+            background-repeat: no-repeat;
+            background-size: 150%;
+            background-position: center;
+            
+            top: 37.5%;
+           }
+        }
+
+        .bubble1{
+            width: 40px;
+            height: 40px;
+            box-shadow: inset 0 0 1.5rem rgb(226, 226, 226);
+        }
+
+        
+        .bubble2{
+            width: 150px;
+            height: 150px;
+        }
+           .team{
+            border-top: 3px solid rgb(237, 237, 237);
+            box-shadow: 0 -14px 1.5rem .01rem rgb(178, 177, 177);
+        }
+        .section h2 { font-size: 1.5rem;
+           text-shadow: 2px 0 .2rem rgb(163, 161, 161);
+        }
+          .contexto{
+           margin-top: 61vh;
+            
+        }
+   
+            .hamburger { display: flex; }
+            .nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; flex-direction: column; padding: 1rem; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+            .nav.active { display: flex; background-color: #FAFAFA;}
+            .hero h1 { font-size: 2rem; }
+            .section { padding: 3rem 5%; }
+  
+        footer {font-size: 10px; background: #1f2937; color: white; text-align: center; padding: 2rem 5%; }
+        .linkedin {font-size: 10px; color: #60a5fa; text-decoration: none; font-weight: 500; }
+        
+         
+        }
+
+
+      
