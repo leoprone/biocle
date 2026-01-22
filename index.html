@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioClé</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="" class="logo"></a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#contexto">Context</a></li>
+                    <li><a href="#desafio">Challenge</a></li>
+                    <li><a href="#solucion">Solution</a></li>
+                    <li><a href="#equipo">Our Team</a></li>
+                    <li><a href="#contacto">Contact</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="bubble1"></div>
+            <div class="bubble2"></div>
+            <div class="hero-content">
+                <div class="vesicle-hero"></div>
+            
+            </div>
+        </section>
+      <div class="content-container">
+        <section id="contexto" class="section contexto">
+            <h2>CONTEXT</h2>
+            <div class="section-content">
+                <div class="card">
+                    <h3>Gut health</h3>
+                    <p>There is scientific evidence showing how the composition and diversity of the gut microbiota are closely linked to healthy aging and improved metabolic performance, highlighting the importance of targeted interventions to promote a balanced microbiota and gut health as factors for longevity and quality of life. In this context, butyrate plays a key role in intestinal epithelial function and immune regulation, and its supplementation can sometimes be highly beneficial.</p>
+                    <p>However, much of the active compounds such as butyrate are lost before reaching their site of action. Traditional delivery systems for bioactive molecules, like capsules, release the compounds into the extracellular environment of the target area, dispersing them. This non-specific release can cause adverse effects in off-target tissues and also increases the likelihood of premature degradation or elimination of the active compound, often requiring high doses to achieve the desired effect.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="desafio" class="section desafio">
+            <h2>CHALLENGE</h2>
+            <div class="section-content">
+                <div class="card">
+                    <h3>Precise Delivery</h3>
+                    <p>In the field of biotechnology and pharmacology, there is growing interest in more sophisticated delivery systems that allow maximizing the effect of bioactive compounds while minimizing doses.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solucion" class="section">
+            <h2>SOLUTION</h2>
+            <div class="section-content">
+                <div class="card">
+                    
+                    <p>We have developed a delivery platform that protects and transports bioactive molecules directly into the interior of the correct cells, increasing efficacy and reducing the necessary dose in formulations.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="team">
+        <section id="equipo" class="section">
+            <h2>OUR TEAM</h2>
+            <div class="section-content equipo">
+                <a href="https://www.linkedin.com/in/juancassini/" target="_blank"   class="equipo-card">
+                    <img src="assets/juan_cassini.jpg" alt="Juan Cassini">
+                    <div class="data-container">
+                    <h3>Juan Cassini</h3>
+                    <p>CEO & Founder</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/daniela-albanesi-68b9a313/" target="_blank"  class="equipo-card">
+                    <img src="assets/daniela_albanesi.jpg" alt="Daniela Albanesi">
+                   <div class="data-container">
+                    <h3>Daniela Albanesi</h3>
+                    <p>CSO</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/albertina-scattolini-5a3b8b145/" target="_blank"  class="equipo-card">
+                    <img src="assets/albertina_scattolini.png" alt="Albertina Scattolini">
+                    <div class="data-container">
+                    <h3>Albertina Scattolini</h3>
+                    <p>CTO</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <p>Connect with us on <a href="https://linkedin.com/company/biocle" class="linkedin" target="_blank">LinkedIn</a></p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
