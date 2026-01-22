@@ -422,11 +422,12 @@
             .hero h1 { font-size: 2rem; }
             .section { padding: 3rem 5%; }
   
-        footer {font-size: 10px; background: #1f2937; color: white; text-align: center; padding: 2rem 5%; }
-        .linkedin {font-size: 10px; color: #60a5fa; text-decoration: none; font-weight: 500; }
+        footer {font-size: 14px; background: #1f2937; color: white; text-align: center; padding: 2rem 5%; }
+        .linkedin {font-size: 14px; color: #60a5fa; text-decoration: none; font-weight: 500; }
         
          
         }
+
 
 
       
